@@ -26,11 +26,23 @@ class Usuarios (db.Model):
     email = db.Column(db.String(80), nullable = False)
     ciudad = db.Column(db.String(80), nullable = False)
     edad = db.Column(db.Integer, nullable = False)
+    genero = db.Column(db.String(80), nullable = False)
+    emprendedor_radio = db.Column(db.String(80), nullable = False)
+    profesional_radio = db.Column(db.String(80), nullable = False)
+   
 
 
-    def __init__(self, usuario, password):
+
+    def __init__(self, usuario, password, email, ciudad, edad, genero, emprendedor_radio, profesional_radio):
         self.usuario = usuario
         self.password = password
+        self.email = email
+        self.ciudad = ciudad
+        self.edad = edad
+        self.genero = genero
+        self.emprendedor_radio = emprendedor_radio
+        self.profesional_radio = profesional_radio 
+
         
 
 #Definimos nuestras rutas
