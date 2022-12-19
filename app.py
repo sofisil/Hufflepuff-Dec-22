@@ -30,7 +30,7 @@ class Usuarios (db.Model):
         
 
 #Definimos nuestras rutas
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/formulario', methods=['GET', 'POST'])
 def pagina_inicio():
     usuario = ''
     password = ''
@@ -40,7 +40,7 @@ def pagina_inicio():
         registro_usuario = Usuarios(usuario, password)
         db.session.add(registro_usuario)
         db.session.commit()
-    return render_template('inicio.html')
+    return render_template('formulario.html')
 
 @app.route('/admin')
 def admin():
