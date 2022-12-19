@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Registrarse</title>
+</head>
+<body class="bg-blue-500">
+    <div class="bg-blue-500">
+        <div >
+            <nav class="flex justify-between bg-yellow-300">
+                <div> 
+                    <img class="h-8 w-8 p-2 border border-blue m-4" src="https://img.wattpad.com/useravatar/PDMHufflepuff.128.92925.jpg" alt="">
+                </div>
+                <div>
+                    <ul class="flex justify-between items-center">
+                        <li class="p-4">Pagina Principal</li>
+                        <li class="p-4">Sobre Nosotros</li>
+                        <li class="p-4">Contacto</li>
+                    </ul>
+                </div>
+                <div class="p-4">
+                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
+                        Registrarse
+                    </button>
+                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
+                        Iniciar Sesion
+                    </button>
+                </div>
+            <div>
+                
+            </div>
+        </nav>
+<br>
+
+<form class="p-20 m-10 bg-yellow-300 border border-blue rounded-3xl">
+   
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label for="usuario" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Usuario</label>
+            <input type="text" id="usuario" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre de Usuario" required>
+        </div>
+
+    </div>
+
+
+    <div class="mb-6">
+
+        <div class="mb-6">
+            <label for="contraseña" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+            <input type="password" id="contraseña" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+        </div> 
+
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Dirección de Email</label>
+        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese Email" required>
+    </div>
+
+
+    <div class="mb-6">
+        <label for="departamentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ciudad</label>
+            <select id="departamentos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Elija una Ciudad</option>
+            <option value="AS">Asunción</option>
+            <option value="CE">Central</option>
+            <option value="LU">Luque</option>
+            <option value="LA">Lambaré</option>
+            <option value="CO">Concepción</option>
+            <option value="PA">Paraguarí</option>
+            <option value="CR">Cordillera</option>
+            <option value="AP">Alto Paraná</option>
+            </select>
+    </div>
+
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label for="edad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
+            <input type="text" id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Edad" required>
+        </div>
+
+    <div class="m-1">
+        <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genero</label>
+            <select id="genero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Seleccione su Genero</option>
+                <option value="HO">Hombre</option>
+                <option value="MU">Mujer</option>
+                <option value="PN">Prefiero no decirlo</option>
+            </select>
+    </div>
+
+
+
+    <div class="border m-5 p-2 border-gray-300 rounded">
+        <p>Que sos:</p>
+        <div class="flex">
+
+            <div class="flex items-center mr-4">
+                <input id="emprendedor_radio" type="radio" value="" name="emprendedor_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="emprendedor_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Emprendedor</label>
+            </div>
+
+            <div class="flex items-center mr-4">
+                <input id="profesional_radio" type="radio" value="" name="profesional_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <label for="propfesional_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Profesional Independiente</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex items-start mb-6 m-5">
+        <div class="flex items-center h-5">
+        <input id="terminos" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+        </div>
+        <label for="terminos" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto los <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</a>.</label>
+    </div>
+    
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
+</form>
+</body>
+</html>

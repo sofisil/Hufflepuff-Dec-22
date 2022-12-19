@@ -1,45 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Emprendedor</title>
+    <style>
+        /* .emprendedor-independiente {
+            display: flex;
+        }
+        .pf-1{
+            background-color:#6995C0;
+            margin-right: 15px;
+        }
+        .pf-2{
+            background-color: #6995C0;
+            margin-right: 15px;
+        } */
+        body 
+        {
+    font-family: "Inter", sans-serif;
+  }
+
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+    </style>
 </head>
-<body class="bg-blue-500">
-<div class="bg-blue-500">
-    <div >
-        <nav class="flex justify-between bg-yellow-300">
-            <div> 
-                <img class="h-8 w-8 p-2 border border-blue m-4" src="https://img.wattpad.com/useravatar/PDMHufflepuff.128.92925.jpg" alt="">
-            </div>
-            <div>
-                <ul class="flex justify-between items-center">
-                    <li class="p-4">Pagina Principal</li>
-                    <li class="p-4">Sobre Nosotros</li>
-                    <li class="p-4">Contacto</li>
-                </ul>
-            </div>
-            <div class="p-4">
-                <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                    Registrarse
-                </button>
-                <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                    Iniciar Sesion
-                </button>
-            </div>
-        <div>
-            
+<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+<!-- ANIMACION DEL FONDO -->
+<body class=" text-[#FAFAFA]" style="font-family: 'Raleway', sans-serif;">
+    <div
+    class="
+      w-full
+      h-screen
+      bg-gradient-to-r
+      from-pink-500
+      via-blue-500
+      to-purple-500
+      background-animate
+    "
+  >
+  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+  <div class="justify-between" >
+    <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
+        <div> 
+            <img src="/static/Logo_mientras.png" alt="" class="h-24 p-4">
         </div>
-    </nav>
-    <h1 class="text-5xl	font-bold text-grey bg-yellow-300 p-5 m-10 flex justify-left rounded-3xl"> HUFFLEPUFF </h1>
-    <br>
-    <br>
-    <div class="emprendedor text-white bg-yellow-300 p-5 m-10 rounded-3xl">
-    <h2 class="text-2xl flex flex-wrap flex justify-left p-5 m-5 font-bold rounded-3xl bg-blue-700"> ¿Que es un Emprendedor?</h2>
-    <h3 class="text-2xl flex flex-wrap flex justify-left p-5 m-5 font-bold rounded-3xl bg-blue-700">Un emprendedor es una persona que identifica una oportunidad y conociendo los riesgos emprende la acción de organizar los recursos necesarios para convertirse en creador o fundador de una empresa o negocio, ​​ con la finalidad de aprovechar dicha oportunidad, obteniendo una respectiva ganancia.</h3>
-    </div>
+        <div class="space-x-4 p-4">
+            <button class="group relative h-12 w-48 overflow-hidden drop-shadow-sm rounded-full bg-[#1f2937] text-lg shadow hover:bg-[#151B23] ">
+                Registrarse
+              </button>
+            <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]">
+                Iniciar Sesion
+              </button>
+        </div>
+    </header>
+<!-------------------------------------------------EL TITULO -------------------------------------------------->
+</div>
+<h1 class="text-5xl	font-bold text-[#FAFAFA] bg-[#1f2937] p-5 flex justify-center my-8"> HUFFLEPUFF </h1>
+<!-------------------------------------------------EL CUERPO -------------------------------------------------->
+    <h2 class="text-5xl flex flex-wrap flex justify-center p-5 m-5 font-bold rounded-3xl"> ¿Que es un Emprendedor?</h2>
+    <h3 class="text-xl flex flex-wrap flex justify-left p-5 m-10 rounded-3xl bg-[#1f2937]">Un emprendedor es una persona que identifica una oportunidad y conociendo los riesgos emprende la acción de organizar los recursos necesarios para convertirse en creador o fundador de una empresa o negocio, ​​ con la finalidad de aprovechar dicha oportunidad, obteniendo una respectiva ganancia. Respecto al significado de emprendedor suele entenderse como aquel que se convierte en creador o fundador de una iniciativa de negocios o empresarial. Esto, individualmente o actuando como colaborador en unión a otros individuos ayudando a realizarlo.
+
+        Comúnmente, el emprendedor ocupa posiciones en los proyectos empresariales en los que se encarga de dirigir y organizar su nacimiento y posterior funcionamiento. De ese modo, asume una serie de riesgos, en mayor parte, de carácter financiero o económico.</h3>
+<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+<div class="flex justify-end">
+    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
+        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
+        <span class="relative text-black group-hover:text-white">Volver atras</span>
+    </button>
+</div>
 </div>
 </body>
 </html>
