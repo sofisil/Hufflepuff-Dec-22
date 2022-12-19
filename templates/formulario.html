@@ -1,46 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Registrarse</title>
-</head>
-<body class="bg-blue-500">
-    <div class="bg-blue-500">
-        <div >
-            <nav class="flex justify-between bg-yellow-300">
-                <div> 
-                    <img class="h-8 w-8 p-2 border border-blue m-4" src="https://img.wattpad.com/useravatar/PDMHufflepuff.128.92925.jpg" alt="">
-                </div>
-                <div>
-                    <ul class="flex justify-between items-center">
-                        <li class="p-4">Pagina Principal</li>
-                        <li class="p-4">Sobre Nosotros</li>
-                        <li class="p-4">Contacto</li>
-                    </ul>
-                </div>
-                <div class="p-4">
-                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                        Registrarse
-                    </button>
-                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                        Iniciar Sesion
-                    </button>
-                </div>
-            <div>
-                
-            </div>
-        </nav>
-<br>
+    <title>Inicio</title>
+    <style>
+        /* .emprendedor-independiente {
+            display: flex;
+        }
+        .pf-1{
+            background-color:#6995C0;
+            margin-right: 15px;
+        }
+        .pf-2{
+            background-color: #6995C0;
+            margin-right: 15px;
+        } */
+        body 
+        {
+    font-family: "Inter", sans-serif;
+  }
 
-<form class="p-20 m-10 bg-yellow-300 border border-blue rounded-3xl">
-   
-    <div class="grid gap-6 mb-6 md:grid-cols-2">
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+    </style>
+</head>
+<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+<!-- ANIMACION DEL FONDO -->
+<body class=" text-[#FAFAFA]" style="font-family: 'Raleway', sans-serif;">
+    <div
+    class="
+      w-full
+      h-auto
+      bg-gradient-to-r
+      from-pink-500
+      via-blue-500
+      to-purple-500
+      background-animate
+    "
+  >
+  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+    <div class="justify-between" >
+        <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
+            <div> 
+                <img src="/static/Logo_mientras.png" alt="" class="h-24 p-4">
+            </div>
+            <div class="space-x-4 p-4">
+                <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]">
+                    Iniciar Sesion
+                  </button>
+            </div>
+        </header> 
+     <!-- ------------------------------------EL FORMULARIO------------------------------------------------------->     
+<form class="p-20 m-10 bg-[#1f2937] border border-blue rounded-3xl">
+    <!---------- Titulo ------------->
+    <p class="text-[#FAFAFA] text-5xl font-bold mb-6">FROMULARIO DE REGISTRO</p>
+    <!--------- Contenido ----------->
+    <div class="mb-6">
         <div>
-            <label for="usuario" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Usuario</label>
-            <input type="text" id="usuario" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre de Usuario" required>
+            <label for="usuario" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Usuario</label>
+            <input type="text" id="usuario" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre de Usuario" required>
         </div>
 
     </div>
@@ -49,18 +92,18 @@
     <div class="mb-6">
 
         <div class="mb-6">
-            <label for="contraseña" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
-            <input type="password" id="contraseña" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+            <label for="contraseña" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Contraseña</label>
+            <input type="password" id="contraseña" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
         </div> 
 
-        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Dirección de Email</label>
-        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese Email" required>
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Dirección de Email</label>
+        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese Email" required>
     </div>
 
 
     <div class="mb-6">
-        <label for="departamentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Departamento/Ciudad</label>
-            <select id="departamentos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <label for="departamentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Departamento/Ciudad</label>
+            <select id="departamentos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option selected>Eliga un Departamento/Ciudad</option>
             <option value="AS">Asunción</option>
             <option value="CE">Central</option>
@@ -74,8 +117,8 @@
     </div>
 
     <div class="m-1">
-        <label for="edad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
-            <select id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <label for="edad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Edad</label>
+            <select id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option selected>Seleccione su Edad</option>
                 <option value="18">18-25</option>
                 <option value="25">25-30</option>
@@ -87,8 +130,8 @@
     </div>
 
     <div class="m-1">
-        <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genero</label>
-            <select id="genero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Genero</label>
+            <select id="genero" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <option selected>Seleccione su Genero</option>
                 <option value="HO">Hombre</option>
                 <option value="MU">Mujer</option>
@@ -98,18 +141,18 @@
 
 
 
-    <div class="border m-5 p-2 border-gray-300 rounded">
-        <p>Que sos:</p>
+    <div class=" w-1/2 border my-8 p-2 border-gray-300 rounded">
+        <p class="text-[#FAFAFA]">Que sos:</p>
         <div class="flex">
 
             <div class="flex items-center mr-4">
                 <input id="emprendedor_radio" type="radio" value="" name="emprendedor_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="emprendedor_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Emprendedor</label>
+                <label for="emprendedor_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Emprendedor</label>
             </div>
 
             <div class="flex items-center mr-4">
                 <input id="profesional_radio" type="radio" value="" name="profesional_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="propfesional_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Profesional Independiente</label>
+                <label for="propfesional_radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Profesional Independiente</label>
             </div>
         </div>
     </div>
@@ -118,10 +161,18 @@
         <div class="flex items-center h-5">
         <input id="terminos" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
         </div>
-        <label for="terminos" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Acepto los <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</a>.</label>
+        <label for="terminos" class="ml-2 text-sm font-medium text-gray-900 dark:text-[#FAFAFA]">Acepto los <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</a>.</label>
     </div>
     
     <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
 </form>
+<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+<div class="flex justify-end">
+    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
+        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
+        <span class="relative text-black group-hover:text-white">Volver atras</span>
+    </button>
+</div>
+</div>
 </body>
 </html>
