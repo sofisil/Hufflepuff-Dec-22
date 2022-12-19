@@ -59,9 +59,9 @@
 
 
     <div class="mb-6">
-        <label for="departamentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Departamento/Ciudad</label>
+        <label for="departamentos" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ciudad</label>
             <select id="departamentos" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-            <option selected>Eliga un Departamento/Ciudad</option>
+            <option selected>Elija una Ciudad</option>
             <option value="AS">Asunción</option>
             <option value="CE">Central</option>
             <option value="LU">Luque</option>
@@ -73,18 +73,11 @@
             </select>
     </div>
 
-    <div class="m-1">
-        <label for="edad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
-            <select id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Seleccione su Edad</option>
-                <option value="18">18-25</option>
-                <option value="25">25-30</option>
-                <option value="30">30-35</option>
-                <option value="35">35-40</option>
-                <option value="40">40-45</option>
-                <option value="45">45 o más</option>
-            </select>
-    </div>
+    <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+            <label for="edad" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Edad</label>
+            <input type="text" id="edad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Edad" required>
+        </div>
 
     <div class="m-1">
         <label for="genero" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Genero</label>
