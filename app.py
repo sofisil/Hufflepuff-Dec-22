@@ -26,6 +26,9 @@ class Usuarios (db.Model):
     email = db.Column(db.String(80), nullable = False)
     ciudad = db.Column(db.String(80), nullable = False)
     edad = db.Column(db.Integer, nullable = False)
+    genero = db.Column(db.String(80), nullable = False)
+    
+
 
 
     def __init__(self, usuario, password):
