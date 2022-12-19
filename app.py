@@ -49,11 +49,24 @@ class Usuarios (db.Model):
 @app.route('/formulario', methods=['GET', 'POST'])
 def pagina_inicio():
     usuario = ''
-    password = ''
+    password = ''   
+    email = '' 
+    ciudad = '' 
+    edad = '' 
+    genero = '' 
+    emprendedor_radio = '' 
+    profesional_radio = '' 
+
     if request.method == 'POST':
         usuario = request.form['usuario']
         password = request.form['password']
-        registro_usuario = Usuarios(usuario, password)
+        email = request.form['email']
+        ciudad = request.form['ciudad']
+        edad = request.form['edad']
+        genero = request.form['genero']
+        emprendedor_radio = request.emprendedor['emprendedor']
+        profesional_radio = request.profesional['profesional']
+        registro_usuario = Usuarios(usuario, password, email, ciudad, edad, genero, emprendedor_radio, profesional_radio)
         db.session.add(registro_usuario)
         db.session.commit()
     return render_template('formulario.html')
