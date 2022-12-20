@@ -20,23 +20,16 @@ class Usuarios (db.Model):
     ciudad = db.Column(db.String(80), nullable = False)
     edad = db.Column(db.Integer, nullable = False)
     genero = db.Column(db.String(80), nullable = False)
-    emprendedor_radio = db.Column(db.String(80), nullable = False)
-    profesional_radio = db.Column(db.String(80), nullable = False)
-   
+    profesion = db.Column(db.String(80), nullable = False)
 
-
-
-    def __init__(self, usuario, password, email, ciudad, edad, genero, emprendedor_radio, profesional_radio):
+    def __init__(self, usuario, password, email, ciudad, edad, genero, profesion):
         self.usuario = usuario
         self.password = password
         self.email = email
         self.ciudad = ciudad
         self.edad = edad
         self.genero = genero
-        self.emprendedor_radio = emprendedor_radio
-        self.profesional_radio = profesional_radio 
-
-        
+        self.profesion = profesion
 
 #Definimos nuestras rutas
 @app.route("/")
@@ -45,15 +38,14 @@ def pag_inicio():
 
 
 @app.route('/formulario', methods=['GET', 'POST'])
-def formularoi_registro():
+def formulario_registro():
     usuario = ''
     password = ''   
     email = '' 
     ciudad = '' 
     edad = '' 
     genero = '' 
-    emprendedor_radio = '' 
-    profesional_radio = '' 
+    profesion = ''
 
     if request.method == 'POST':
         usuario = request.form['usuario']
@@ -62,9 +54,8 @@ def formularoi_registro():
         ciudad = request.form['ciudad']
         edad = request.form['edad']
         genero = request.form['genero']
-        emprendedor_radio = request.emprendedor['emprendedor']
-        profesional_radio = request.profesional['profesional']
-        registro_usuario = Usuarios(usuario, password, email, ciudad, edad, genero, emprendedor_radio, profesional_radio)
+        profesion = request.form['profesion']
+        registro_usuario = Usuarios(usuario, password, email, ciudad, edad, genero, profesion)
         db.session.add(registro_usuario)
         db.session.commit()
     return render_template('formulario.html')
@@ -77,7 +68,6 @@ def inicio_sesion():
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
-        auth = Usuarios.query.get(id)
         if email and Usuarios.password == password:
             return render_template('/')
         return "<h1>Id de usuario invalido o contrasenha</h1>"
