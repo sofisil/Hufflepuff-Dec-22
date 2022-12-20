@@ -77,33 +77,33 @@
         </header> 
     </div>
      <!-- ------------------------------------EL FORMULARIO------------------------------------------------------->     
-<form class="w-fit p-20 m-10 bg-[#1f2937] border-gray-300 drop-shadow-sm rounded-3xl mx-auto">
+<form class="w-fit p-20 m-10 bg-[#1f2937] border-gray-300 drop-shadow-sm rounded-3xl mx-auto" method="POST">
     <!---------- Titulo ------------->
     <p class="text-[#FAFAFA] text-5xl font-bold mb-6">REGISTRO</p>
     <!--------- Contenido ----------->
     <div class="mb-6 w-full">
         <div>
             <label for="usuario" class="block mb-2 text-sm font-medium text-gray-200">Usuario</label>
-            <input type="text" id="usuario" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full" placeholder="Nombre de Usuario" required >
+            <input type="text" name="usuario" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full" placeholder="Nombre de Usuario" required >
         </div>
     </div>
 
 
     <div class="mb-6 w-full">
         <div class="mb-6 w-full">
-            <label for="contraseña" class="block mb-2 text-sm font-medium text-gray-200">Contraseña</label>
-            <input type="password" id="contraseña" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-200">Contraseña</label>
+            <input type="password" name="password" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
         </div> 
 
         <label for="email" class="block mb-2 text-sm font-medium text-gray-200">Dirección de Email</label>
-        <input type="email" id="email" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese Email" required>
+        <input type="email" name="email" class="w-full bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ingrese Email" required>
 
     </div>
 
 
     <div class="mb-6 w-full">
         <label for="ciudad" class="block mb-2 text-sm font-medium text-gray-200">Ciudad</label>
-            <select id="ciudad" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select name="ciudad" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             <option selected>Ciudad</option>
 
             <option value="AS">Asunción</option>
@@ -115,7 +115,7 @@
     </div>
     <div class="mb-6 w-full">
         <label for="edad" class="block mb-2 text-sm font-medium text-gray-200">Edad</label>
-        <select id="edad" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <select name="edad" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
             
             <option selected>Seleccione su Edad</option>
             <option value="18">18-25</option>
@@ -129,7 +129,7 @@
     
     <div class="mb-6 w-full">
         <label for="genero" class="block mb-2 text-sm font-medium text-gray-200">Genero</label>
-            <select id="genero" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <select name="genero" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
             <option selected>Seleccione su Genero</option>
             <option value="HO">Masculino</option>
@@ -138,25 +138,20 @@
             </select>
     </div>
 
-    <div class=" w-full border my-8 p-2 border-gray-500 rounded">
-        <p class="text-[#FAFAFA]">Eres un:</p>
-        <div class="flex">
 
-            <div class="flex items-center mr-4">
-                <input id="emprendedor_radio" type="radio" value="" id="radio_1" name="emprendedor_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="emprendedor_radio" class="ml-2 text-sm font-medium text-gray-200">Emprendedor</label>
-            </div>
+    <div class="mb-6 w-full">
+        <label for="profesion" class="block mb-2 text-sm font-medium text-gray-200">Eres un</label>
+            <select name="profesion" class="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
 
-            <div class="flex items-center mr-4">
-                <input id="profesional_radio" type="radio" value="" id="radio_2" name="profesional_radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                <label for="propfesional_radio" class="ml-2 text-sm font-medium text-gray-200">Profesional Independiente</label>
-            </div>
-        </div>
+            <option selected>Seleccione su Opcion</option>
+            <option value="EM">Emprendedor</option>
+            <option value="PI">Profesional Independiente</option>
+            </select>
     </div>
-
+    
     <div class="flex items-start mb-6 m-5">
         <div class="flex items-center h-5">
-        <input id="terminos" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
+        <input name="terminos" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required>
         </div>
         <label for="terminos" class="ml-2 text-sm font-medium text-gray-200">Acepto los <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terminos y condiciones</a>.</label>
     </div>
