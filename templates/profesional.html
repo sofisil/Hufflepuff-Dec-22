@@ -65,10 +65,9 @@
             <p class="text-[#ffc901]">Sencillo</p><p class="text-[#FAFAFA]">Py</p>
         </div>
         <div class="space-x-4 p-4">
-            <button class="group relative h-12 w-48 overflow-hidden drop-shadow-sm rounded-full bg-[#1f2937] text-lg shadow hover:bg-[#151B23] "><a href="http://127.0.0.1:5000/formulario"> Registrarse</a>
+            <button class="group relative h-12 w-48 overflow-hidden drop-shadow-sm rounded-full bg-[#1f2937] text-lg shadow hover:bg-[#151B23] "><a href={{url_for('formulario_registro')}}>Registrarse</a>
               </button>
-            <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]">
-                Iniciar Sesion
+            <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]"> <a href="{{url_for('inicio_sesion')}}">Iniciar Sesion</a>
               </button>
         </div>
     </header>
@@ -85,7 +84,7 @@
 <div class="flex justify-end">
 <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
     <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
-    <span class="relative text-black group-hover:text-white">Volver atras</span>
+    <span class="relative text-black group-hover:text-white"><a href="{{url_for('pag_inicio')}}">Volver atras</a></span>
 </button>
 </div>
 </body>
