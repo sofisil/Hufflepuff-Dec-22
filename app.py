@@ -61,7 +61,7 @@ def formulario_registro():
         if profesion == 'EM':
             return redirect(url_for('emprendedor')) #cambiar a la funcion de la ruta de vista emprendedor dp
         elif profesion == 'PI':
-            return redirect(url_for('profesional')) #cambiar a la funcion de la ruta de vista profesional
+            return redirect(url_for('info_profesional')) #cambiar a la funcion de la ruta de vista profesional
     return render_template('formulario.html')
 
 
@@ -117,6 +117,10 @@ def borrar():
         db.session.commit()
         return redirect(url_for('borrar'))
     return render_template('borrar.html', usuarios = usuarios)
+
+@app.route("/info_profecional")
+def info_profesional():
+    return render_template("vista_profesional.html")
 
 if __name__ == '__main__':
     app.run(debug = True)
