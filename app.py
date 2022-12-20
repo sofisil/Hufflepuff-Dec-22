@@ -58,6 +58,10 @@ def pagina_inicio():
         db.session.commit()
     return render_template('formulario.html')
 
+@app.ruote('/ingreso')
+def inicio_sesion():
+    return render_template('/ingreso')
+
 @app.route('/admin')
 def admin():
     usuarios = Usuarios.query.all()
