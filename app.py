@@ -58,6 +58,10 @@ def formulario_registro():
         registro_usuario = Usuarios(usuario, password, email, ciudad, edad, genero, profesion)
         db.session.add(registro_usuario)
         db.session.commit()
+        if profesion == 'EM':
+            return redirect(url_for('emprendedor')) #cambiar a la funcion de la ruta de vista emprendedor dp
+        elif profesion == 'PI':
+            return redirect(url_for('profesional')) #cambiar a la funcion de la ruta de vista profesional
     return render_template('formulario.html')
 
 
