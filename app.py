@@ -10,13 +10,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # instanciamos la base de datos en la variable db
 db = SQLAlchemy(app)
 
-@app.route("/")
-def pag_inicio():
-    return render_template("pag_inicio.html")
-
-@app.route("/formulario")
-def formular():
-    return render_template("formulario.html")
 
 #creamos los modelos para nuestra base de datos
 class Usuarios (db.Model):
@@ -46,17 +39,57 @@ class Usuarios (db.Model):
         
 
 #Definimos nuestras rutas
+@app.route("/")
+def pag_inicio():
+    return render_template("pag_inicio.html")
+
+
 @app.route('/formulario', methods=['GET', 'POST'])
-def pagina_inicio():
+def formularoi_registro():
     usuario = ''
-    password = ''
+    password = ''   
+    email = '' 
+    ciudad = '' 
+    edad = '' 
+    genero = '' 
+    emprendedor_radio = '' 
+    profesional_radio = '' 
+
     if request.method == 'POST':
         usuario = request.form['usuario']
         password = request.form['password']
-        registro_usuario = Usuarios(usuario, password)
+        email = request.form['email']
+        ciudad = request.form['ciudad']
+        edad = request.form['edad']
+        genero = request.form['genero']
+        emprendedor_radio = request.emprendedor['emprendedor']
+        profesional_radio = request.profesional['profesional']
+        registro_usuario = Usuarios(usuario, password, email, ciudad, edad, genero, emprendedor_radio, profesional_radio)
         db.session.add(registro_usuario)
         db.session.commit()
     return render_template('formulario.html')
+
+
+@app.route('/ingreso')
+def inicio_sesion():
+    email = ''
+    password = ''
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        auth = Usuarios.query.get(id)
+        if email and Usuarios.password == password:
+            return render_template('/')
+        return "<h1>Id de usuario invalido o contrasenha</h1>"
+    return render_template('ingreso.html')
+
+@app.route("/emprendedor")
+def emprendedor():
+    return render_template("emprendedor.html")
+
+@app.route("/profesional")
+def profesional():
+    return render_template("profesional.html")
 
 @app.route('/admin')
 def admin():
