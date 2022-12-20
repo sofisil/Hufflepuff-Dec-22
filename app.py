@@ -83,6 +83,14 @@ def inicio_sesion():
         return "<h1>Id de usuario invalido o contrasenha</h1>"
     return render_template('ingreso.html')
 
+@app.route("/emprendedor")
+def emprendedor():
+    return render_template("emprendedor.html")
+
+@app.route("/profesional")
+def profesional():
+    return render_template("profesional.html")
+
 @app.route('/admin')
 def admin():
     usuarios = Usuarios.query.all()
