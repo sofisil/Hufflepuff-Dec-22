@@ -1,41 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+PE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Ingreso</title>
+    <title>Inicio</title>
+    <style>
+        /* .emprendedor-independiente {
+            display: flex;
+        }
+        .pf-1{
+            background-color:#6995C0;
+            margin-right: 15px;
+        }
+        .pf-2{
+            background-color: #6995C0;
+            margin-right: 15px;
+        } */
+        body 
+        {
+    font-family: "Inter", sans-serif;
+  }
+
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+    </style>
 </head>
-<body class="bg-blue-500">
-    <div class="bg-blue-500">
-        <div >
-            <nav class="flex justify-between bg-yellow-300">
-                <div> 
-                    <img class="h-8 w-8 p-2 border border-blue m-4" src="https://img.wattpad.com/useravatar/PDMHufflepuff.128.92925.jpg" alt="">
-                </div>
-                <div>
-                    <ul class="flex justify-between items-center">
-                        <li class="p-4">Pagina Principal</li>
-                        <li class="p-4">Sobre Nosotros</li>
-                        <li class="p-4">Contacto</li>
-                    </ul>
-                </div>
-                <div class="p-4">
-                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                        Registrarse
-                    </button>
-                    <button class="bg-blue-700 hover:bg-yellow-300 text-grey font-bold py-2 px-4 rounded-full">
-                        Iniciar Sesion
-                    </button>
-                </div>
-            <div>
-                
+<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+<!-- ANIMACION DEL FONDO -->
+<body class=" text-[#FAFAFA]" style="font-family: 'Raleway', sans-serif;">
+    <div
+    class="
+      w-full
+      h-auto
+      bg-gradient-to-r
+      from-pink-500
+      via-blue-500
+      to-purple-500
+      background-animate
+    "
+  >
+  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+    <div class="justify-between" >
+        <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
+            <div> 
+                <img src="/static/Logo_mientras.png" alt="" class="h-24 p-4">
             </div>
-        </nav>
-<br>
+            <div class="space-x-4 p-4">
+                <button class="group relative h-12 w-48 overflow-hidden drop-shadow-sm rounded-full bg-[#1f2937] text-lg shadow hover:bg-[#151B23] "><a href="http://127.0.0.1:5000/formulario"> Registrarse</a>
+                  </button>
+                <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]">
+                    Iniciar Sesion
+                  </button>
+            </div>
+        </header>
+
+<!------------------------------------------ ACA EMPIEZA LA PAGINA --------------------------------------------->
 <form >
-    <div class="p-5 m-20 bg-yellow-300 border border-blue rounded-3xl flex justify-center">
+    <div class="p-5 mx-40 my-20 bg-gray-900 border border-blue rounded-3xl flex justify-center">
         <section class="bg-gray-50 dark:bg-gray-900">
             <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
                 <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -67,8 +112,8 @@
                                 </div>
                                 <a href="#" class="m-1 text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">¿Olvidaste tu Contraseña?</a>
                             </div>
-                            <button type="submit" class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Ingresar</button>
-                            <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                            <button type="submit" class="w-full font-bold text-gray-800 bg-white hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Ingresar</button>
+                            <p class="text-sm font-light text-gray-500 dark:text-gray-400 text-center">
                                 ¿Aun no tienes una cuenta? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Registrate</a>
                             </p>
                         </form>
@@ -77,6 +122,15 @@
             </div>
           </section>
     </div>
+<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+<div class="flex justify-end">
+    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
+        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
+        <span class="relative text-black group-hover:text-white">Volver atras</span>
+    </button>
+        </div>
+    </div>
+</div>
 </form>
 </body>
 </html>
