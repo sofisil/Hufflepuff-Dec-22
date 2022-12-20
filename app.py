@@ -45,7 +45,7 @@ def pag_inicio():
 
 
 @app.route('/formulario', methods=['GET', 'POST'])
-def pagina_inicio():
+def formularoi_registro():
     usuario = ''
     password = ''   
     email = '' 
