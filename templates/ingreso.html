@@ -1,0 +1,136 @@
+PE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inicio</title>
+    <style>
+        /* .emprendedor-independiente {
+            display: flex;
+        }
+        .pf-1{
+            background-color:#6995C0;
+            margin-right: 15px;
+        }
+        .pf-2{
+            background-color: #6995C0;
+            margin-right: 15px;
+        } */
+        body 
+        {
+    font-family: "Inter", sans-serif;
+  }
+
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+    </style>
+</head>
+<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+<!-- ANIMACION DEL FONDO -->
+<body class=" text-[#FAFAFA]" style="font-family: 'Raleway', sans-serif;">
+    <div
+    class="
+      w-full
+      h-auto
+      bg-gradient-to-r
+      from-pink-500
+      via-blue-500
+      to-purple-500
+      background-animate
+    "
+  >
+  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+    <div class="justify-between" >
+        <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
+            <div> 
+                <img src="/static/Logo_mientras.png" alt="" class="h-24 p-4">
+            </div>
+            <div class="space-x-4 p-4">
+                <button class="group relative h-12 w-48 overflow-hidden drop-shadow-sm rounded-full bg-[#1f2937] text-lg shadow hover:bg-[#151B23] "><a href="http://127.0.0.1:5000/formulario"> Registrarse</a>
+                  </button>
+                <button class="text-[#1f2937] group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-full bg-[#fafafa] text-lg shadow hover:bg-[#EEE7E7]">
+                    Iniciar Sesion
+                  </button>
+            </div>
+        </header>
+
+<!------------------------------------------ ACA EMPIEZA LA PAGINA --------------------------------------------->
+<form >
+    <div class="p-5 mx-40 my-20 bg-gray-900 border border-blue rounded-3xl flex justify-center">
+        <section class="bg-gray-50 dark:bg-gray-900">
+            <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                    <img class="w-8 h-8 mr-2" src="https://img.wattpad.com/useravatar/PDMHufflepuff.128.92925.jpg" alt="logo">
+                    HUFFLEPUFF    
+                </a>
+                <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                            Ingresa a tu Cuenta
+                        </h1>
+                        <form class="space-y-4 md:space-y-6" action="#">
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tu email</label>
+                                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="nombre@email.com" required="">
+                            </div>
+                            <div>
+                                <label for="contraseña" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+                                <input type="password" name="contraseña" id="contraseña" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                      <input id="recordar" aria-describedby="recordar" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required="">
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                      <label for="recordar" class="text-gray-500 dark:text-gray-300">Recuerdame </label>
+                                    </div>
+                                </div>
+                                <a href="#" class="m-1 text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">¿Olvidaste tu Contraseña?</a>
+                            </div>
+                            <button type="submit" class="w-full font-bold text-gray-800 bg-white hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-primary-300 rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Ingresar</button>
+                            <p class="text-sm font-light text-gray-500 dark:text-gray-400 text-center">
+                                ¿Aun no tienes una cuenta? <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Registrate</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </section>
+    </div>
+<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+<div class="flex justify-end">
+    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
+        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
+        <span class="relative text-black group-hover:text-white">Volver atras</span>
+    </button>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+</html>
