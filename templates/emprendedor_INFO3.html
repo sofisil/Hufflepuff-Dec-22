@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="/static/img/LOGOsencillopy.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
-  rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Inicio</title>
+    <title>Información</title>
     <style>
-        /* .emprendedor-independiente {
+      /* .emprendedor-independiente {
             display: flex;
         }
         .pf-1{
@@ -24,73 +31,227 @@
             background-color: #6995C0;
             margin-right: 15px;
         } */
-        body 
-        {
-    font-family: "Inter", sans-serif;
-  }
+      body {
+        font-family: "Inter", sans-serif;
+      }
 
-  .background-animate {
-    background-size: 400%;
+      .background-animate {
+        background-size: 400%;
 
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-  }
+        -webkit-animation: AnimationName 10s ease infinite;
+        -moz-animation: AnimationName 10s ease infinite;
+        animation: AnimationName 10s ease infinite;
+      }
 
-  @keyframes AnimationName {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+      @keyframes AnimationName {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
     </style>
-</head>
-<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
-<!-- ANIMACION DEL FONDO -->
-<body class=" text-[#FAFAFA]
-      w-full
-      h-screen
-      bg-gradient-to-r
-      from-pink-500
-      via-blue-500
-      to-purple-500
-      background-animate
-    " style="font-family: 'Raleway', sans-serif;">
-
-  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
-  <div class="justify-between" >
-    <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
-        <div class="flex justify-between items-center text-gray-800 p-2"> 
-            <img src="/static/img/LOGOsencillopy.png" alt="" class="h-24 p-4">
-            <a href="{{url_for('pag_inicio')}}"> <p class="text-[#ffc901]">Sencillo</p> </a> <a href="{{url_for('pag_inicio')}}"> <p class="text-[#FAFAFA]">Py</p></a>
+  </head>
+  <!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+  <!-- ANIMACION DEL FONDO -->
+  <body
+    class="text-[#FAFAFA] w-full h-screen bg-gradient-to-r from-pink-500 via-blue-500 to-purple-500 background-animate"
+    style="font-family: 'Raleway', sans-serif"
+  >
+    <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+    <div class="justify-between">
+      <header
+        class="flex justify-between items-center text-[#FAFAFA] text-xl"
+        style="font-family: 'Raleway', sans-serif; font-weight: 900"
+      >
+        <div class="flex justify-between items-center text-gray-800 p-2">
+          <img src="/static/img/LOGOsencillopy.png" alt="" class="h-24 p-4" />
+          <a href="{{url_for('pag_inicio')}}">
+            <p class="text-[#ffc901]">Sencillo</p>
+          </a>
+          <a href="{{url_for('pag_inicio')}}">
+            <p class="text-[#FAFAFA]">Py</p></a
+          >
         </div>
         <div class="space-x-4 p-4">
-            <p class=" h-12 w-48 text-lg ">Hola, {{nombre_usuario }}</p>
-    <!---------------------- !!!!!ACA PONER UN HOLA *USUARIO* @BACKEND!!!!! ----------------->
+          <p class="h-12 w-48 text-lg">Hola, {{nombre_usuario }}</p>
+          <!---------------------- !!!!!ACA PONER UN HOLA *USUARIO* @BACKEND!!!!! ----------------->
         </div>
-    </header>
-<!-------------------------------------------------EL TITULO -------------------------------------------------->
-</div>
-<div class="bg-[#1f2937] p-5 flex justify-center mx-40 my-8 rounded-xl mix-blend-hard-light">
-<h1 class="text-5xl	font-bold text-[#ffc901]"> Sencillo </h1> <h1 class="text-5xl	font-bold text-[#FAFAFA] ">Py</h1>
-</div>
-<!------------------------------------------- CARDS --------------------------------------------------------->
-<h2 class="text-5xl flex flex-wrap flex justify-center p-5 m-5 font-bold rounded-3xl"> ¿Que es un Emprendedor?</h2>
-<h3 class="text-xl flex flex-wrap flex justify-left p-5 my-10 mx-40 rounded-3xl bg-[#1f2937]">Un emprendedor es una persona que identifica</h3>
+      </header>
+      <!-------------------------------------------------EL TITULO -------------------------------------------------->
+    </div>
+    <div
+      class="bg-[#1f2937] p-5 flex justify-center mx-40 my-8 rounded-xl mix-blend-hard-light"
+    >
+      <h1 class="text-5xl font-bold text-[#ffc901]">Sencillo</h1>
+      <h1 class="text-5xl font-bold text-[#FAFAFA]">Py</h1>
+    </div>
+    <!------------------------------------------- CARDS --------------------------------------------------------->
+    <h2
+      class="text-5xl flex flex-wrap flex justify-center p-5 m-5 font-bold rounded-3xl"
+    >
+      Tributación
+    </h2>
+    <div class="bg-[#1f2937] max-w-3xl mx-auto p-10 rounded-3xl">
+      <div class="mx-auto">
+        <h2 class="text-3xl font-semibold">
+          SISTEMA TRIBUTARIO NACIONAL. LEY Nº 6.380/19
+        </h2>
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Quienes debe tributar?
+        </h3>
+        <ol class="grid gap-2 text-lg text-slate-300">
+          <li>
+            1. Las Empresas Unipersonales y las sucesiones indivisas de los
+            propietarios de estas empresas.
+          </li>
+          <li>
+            2. Las Sociedades Simples, Sociedades Anónimas, Sociedades de
+            Responsabilidad Limitada, Sociedades en Comandita por Acciones,
+            Sociedades en Comandita Simple y las Sociedades de Capital e
+            Industria.
+          </li>
+          <li>
+            3. Los Consorcios constituidos para la realización de una obra
+            pública. En este caso, los consorciados serán solidariamente
+            responsables de las obligaciones tributarias derivadas de las
+            operaciones del consorcio.
+          </li>
+          <li>
+            4. Las Asociaciones, las Corporaciones, las Fundaciones, las
+            Cooperativas y las Mutuales.
+          </li>
+          <li>
+            5. Las Estructuras Jurídicas Transparentes, en las formas y
+            condiciones establecidas en el presente Capítulo.
+          </li>
+          <li>
+            6. Las empresas públicas, entes autárquicos, entidades
+            descentralizadas y sociedades de economía mixta.
+          </li>
+          <li>
+            7. Las sucursales, agencias o establecimientos permanentes de
+            personas domiciliadas o entidades constituidas en el exterior que
+            realicen actividades gravadas en el país.
+          </li>
+          <li>
+            8. Las entidades y empresas privadas de cualquier naturaleza, con
+            personería jurídica o sin ella, no mencionadas en los numerales
+            anteriores.
+          </li>
+          <li>
+            9. Las personas jurídicas o estructuras jurídicas transparentes son
+            sujetos de derecho, distintos de sus miembros y sus patrimonios son
+            independientes.
+          </li>
+        </ol>
 
-<div class="flex justify-center items-center rounded object-cover object-center mb-3">
-<img class="flex justify-center rounded w-80 object-cover object-center mb-3" src="/static/img/imagen_3.png" alt="" />
-</div>
-<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
-<div class="flex justify-end">
-    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
-        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
-        <span class="relative text-black group-hover:text-white"><a href ="{{url_for('pag_inicio')}}">Volver atras</a></span>
-    </button>
-</div>
-</body>
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Qué porcentaje se debe pagar?
+        </h3>
+        <p class="grid gap-2 text-lg text-slate-300">
+          La tasa del IRE será del 10% (diez por ciento), sobre la renta neta.
+        </p>
+
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Que impuestos tributar para empezar a emprender?:
+        </h3>
+        <p class="grid gap-2 text-md text-slate-300">
+          Tienen dos opciones, podrían inscribirse como contribuyente del IRE
+          simple o IRE re simple. Para entender mejor cual impuesto le conviene,
+          expliquemos un poco la diferencia de ambos impuestos:
+        </p>
+
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Qué es el Impuesto a la Renta Empresarial (IRE)?
+        </h3>
+        <p class="grid gap-2 text-lg text-slate-300">
+          La reforma tributaria nos presenta un IMPUESTO A LA RENTA EMPRESARIA
+          (IRE) el cual se divide en 3:
+        </p>
+        <ul class="text-lg text-slate-300 ml-5 flex flex-col gap-3">
+          <li>
+            1. El IRE General está más enfocado para empresas que tienen
+            personería jurídica (S.A, SRL, Sociedades Simple, etc) o empresas
+            que facturan más de 2.000.000.000 gs anual.
+          </li>
+          <li>
+            2. El IRE Simple está enfocado para medianas empresas (sin
+            personería jurídica), cuyos ingresos devengados en el año anterior
+            no superen los 2.000.000.000 gs
+          </li>
+          <li>
+            3. El IRE re simple, para pequeñas empresas, si sus ingresos brutos
+            devengados en el ejercicio fiscal anterior sea igual o inferior
+            80.000.000 gs.
+          </li>
+        </ul>
+
+        <p class="text-lg text-slate-300 leading-relaxed mt-5">
+          Un nuevo emprendedor, debería de inscribirse como contribuyente del
+          IRE RE SIEMPLE, reúne todos los requisitos: es una pequeña empresa, no
+          tiene aún facturación anual y se calcula que en el primer año aun no
+          llegaría a los 80.000.000 gs de facturación. Con el IRE RE SIMPLE, en
+          el artículo 27 de la Ley 6380 dice: LAS EMPRESAS UNIPERSONALES QUE
+          LIQUIDEN BAJO ESTE RÉGIMEN NO SERÁN CONTRIBUYENTES DE IVA. Y este
+          punto juegan en contra de un proyecto que haya cerrado un contrato con
+          una empresa importante que tributa IVA Mensual, y para poder liquidar
+          ese impuesto, la empresa necesita utilizar el iva del producto y
+          servicio que el nuevo emprendedor le va a brindar. No es obligación
+          del nuevo emprendedor inscribirse si o si en el IRE SIMPLE, pero
+          tampoco es obligación de la empresa contratar sus servicios. Si el
+          nuevo emprendedor no le factura con iva, pierde el contrato. Lo
+          recomendable en este caso es que se inscriba como contribuyente de IVA
+          GENERAL e IRE Simple.
+        </p>
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          REGISTRO ÚNICO DEL CONTRIBUYENTE (RUC)
+        </h3>
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Qué es el Registro Único del Contribuyente (RUC)?
+        </h3>
+        <p class="grid gap-2 text-lg text-slate-300">
+          El Registro Único del Contribuyente (RUC) es el número de
+          identificación - personal e intransferible - de todas aquellas
+          personas nacionales o extranjeras, y de todas las personas jurídicas
+          (empresas, prestadoras de servicios, industrias, etc.) que realicen
+          actividades económicas. También deben tener RUC las entidades sin
+          fines de lucro.
+        </p>
+        <h3 class="mt-8 text-2xl mb-3 font-semibold tracking-wide">
+          ¿Cómo se obtiene un RUC?
+        </h3>
+        <p class="grid gap-2 text-lg text-slate-300">
+          Todas las personas que necesiten un RUC (Cédula Tributaria) deben
+          inscribirse en el Departamento de Registro Único del Contribuyente de
+          la Subsecretaría de Estado de Tributación (SET), cuya sede central
+          está en Asunción, en las calles Iturbe entre Eligio Ayala y Mariscal
+          López, o en las agencias regionales de la Dirección de Recaudación en
+          todo el país. El horario de atención es de 07:00 a 13:00 horas de
+          lunes a viernes. Se deben presentar documentos específicos de acuerdo
+          al tipo de actividad e impuesto que debe pagar.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-center items-center rounded object-cover object-center mb-3"
+    ></div>
+    <!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+    <div class="flex justify-end">
+      <button
+        class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10"
+      >
+        <div
+          class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"
+        ></div>
+        <span class="relative text-black group-hover:text-white"
+          ><a href="{{url_for('pag_inicio')}}">Volver atras</a></span
+        >
+      </button>
+    </div>
+  </body>
 </html>
