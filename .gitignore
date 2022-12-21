@@ -60,6 +60,7 @@ Temporary Items
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
+.instance
 .venv
 pip-selfcheck.json
 
