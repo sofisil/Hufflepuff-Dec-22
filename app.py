@@ -102,6 +102,31 @@ def info_profesional():
     nombre_usuario =  diccionario_usuario['usuario']
     return render_template("vista_profesional.html",nombre_usuario = nombre_usuario)
 
+@app.route('/info_emprendedor_iva')
+def info_emprendedor_iva():
+    return render_template('emprendedor_INFO1.html')
+
+@app.route('/info_emprendedor_ahorro')
+def info_emprendedor_ahorro():
+    return render_template('emprendedor_INFO2.html')
+
+@app.route('/info_emprendedor_tributacion')
+def info_emprendedor_tributacion():
+    return render_template('emprendedor_INFO3.html')
+
+@app.route('/info_profesional_iva')
+def info_profesional_iva():
+    return render_template('profindependiente_INFO1.html')
+
+@app.route('/info_profesional_ahorro')
+def info_profesional_ahorro():
+    return render_template ('profindependiente_INFO2.html')
+
+@app.route('/info_profesional_tributacion')
+def info_profesional_tributacion():
+    return render_template('profindependiente_INFO3.html')
+
+
 if __name__ == '__main__':
     app.run(debug = True)
     with app.app_context():
