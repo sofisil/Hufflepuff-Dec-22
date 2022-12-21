@@ -25,3 +25,9 @@ Debe ingresar a al Windows PowerShell y ejecutar en administrador
 ##Ejecutar con el comando
 
 `flask run`
+
+
+Poner todas las preguntas con los mismos estilos
+poner cada respuesta en un solo p
+poner todos los p con los mismos estilos
+si hace falta salto de linea, usar br
