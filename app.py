@@ -149,6 +149,7 @@ def info_profesional_tributacion():
     largor = len(usuario)-1
     diccionario_usuario = usuario[largor].__dict__
     nombre_usuario =  diccionario_usuario['usuario']
+    print(nombre_usuario)
     return render_template("profindependiente_INFO3.html",nombre_usuario = nombre_usuario)
 
 
