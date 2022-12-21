@@ -83,15 +83,24 @@ def emprendedor():
 
 @app.route("/info_emprendedor")
 def info_emprendedor():
-    return render_template("vista_emprendedor.html")
+    usuario = Usuarios.query.all()
+    largor = len(usuario)-1
+    diccionario_usuario = usuario[largor].__dict__
+    nombre_usuario =  diccionario_usuario['usuario']
+    return render_template("vista_emprendedor.html",nombre_usuario = nombre_usuario)
 
 @app.route("/profesional")
 def profesional():
     return render_template("profesional.html")
 
-@app.route("/info_profecional")
+
+@app.route("/info_profesional")
 def info_profesional():
-    return render_template("vista_profesional.html")
+    usuario = Usuarios.query.all()
+    largor = len(usuario)-1
+    diccionario_usuario = usuario[largor].__dict__
+    nombre_usuario =  diccionario_usuario['usuario']
+    return render_template("vista_profesional.html",nombre_usuario = nombre_usuario)
 
 if __name__ == '__main__':
     app.run(debug = True)
