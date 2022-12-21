@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+  rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Inicio</title>
+    <style>
+        /* .emprendedor-independiente {
+            display: flex;
+        }
+        .pf-1{
+            background-color:#6995C0;
+            margin-right: 15px;
+        }
+        .pf-2{
+            background-color: #6995C0;
+            margin-right: 15px;
+        } */
+        body 
+        {
+    font-family: "Inter", sans-serif;
+  }
+
+  .background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+    </style>
+</head>
+<!------------------------------------------ ACA EMPIEZA EL CODIGO DE LA PAGINA --------------------------------------------------------->
+<!-- ANIMACION DEL FONDO -->
+<body class=" text-[#FAFAFA]
+      w-full
+      h-screen
+      bg-gradient-to-r
+      from-pink-500
+      via-blue-500
+      to-purple-500
+      background-animate
+    " style="font-family: 'Raleway', sans-serif;">
+
+  <!-- ------------------------------------EL HEADER ------------------------------------------------------->
+  <div class="justify-between" >
+    <header class="flex justify-between items-center text-[#FAFAFA] text-xl" style="font-family: 'Raleway', sans-serif; font-weight: 900">
+        <div class="flex justify-between items-center text-gray-800 p-2"> 
+            <img src="/static/img/LOGOsencillopy.png" alt="" class="h-24 p-4">
+            <a href="{{url_for('pag_inicio')}}"> <p class="text-[#ffc901]">Sencillo</p> </a> <a href="{{url_for('pag_inicio')}}"> <p class="text-[#FAFAFA]">Py</p></a>
+        </div>
+        <div class="space-x-4 p-4">
+            <p class=" h-12 w-48 text-lg ">Hola, {{nombre_usuario }}</p>
+    <!---------------------- !!!!!ACA PONER UN HOLA *USUARIO* @BACKEND!!!!! ----------------->
+        </div>
+    </header>
+<!-------------------------------------------------EL TITULO -------------------------------------------------->
+</div>
+<div class="bg-[#1f2937] p-5 flex justify-center mx-40 my-8 rounded-xl mix-blend-hard-light">
+<h1 class="text-5xl	font-bold text-[#ffc901]"> Sencillo </h1> <h1 class="text-5xl	font-bold text-[#FAFAFA] ">Py</h1>
+</div>
+<!------------------------------------------- CARDS --------------------------------------------------------->
+<h2 class="text-5xl flex flex-wrap flex justify-center p-5 m-5 font-bold rounded-3xl"> ¿Que es un Emprendedor?</h2>
+<h3 class="text-xl flex flex-wrap flex justify-left p-5 my-10 mx-40 rounded-3xl bg-[#1f2937]">Un emprendedor es una persona que identifica</h3>
+
+<div class="flex justify-center items-center rounded object-cover object-center mb-3">
+<img class="flex justify-center rounded w-80 object-cover object-center mb-3" src="/static/img/imagen_6.png" alt="" />
+</div>
+<!-------------------------------------------------EL BOTON DE VOLVER -------------------------------------------------->
+<div class="flex justify-end">
+    <button class="group relative h-12 w-48 drop-shadow-sm overflow-hidden rounded-lg bg-white text-lg shadow m-10">
+        <div class="absolute inset-0 w-0 bg-[#1f2937] transition-all duration-[700ms] ease-out group-hover:w-full"></div>
+        <span class="relative text-black group-hover:text-white"><a href ="{{url_for('pag_inicio')}}">Volver atras</a></span>
+    </button>
+</div>
+</body>
+</html>
